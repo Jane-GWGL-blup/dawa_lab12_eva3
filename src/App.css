@@ -32,10 +32,123 @@
   }
 }
 
+header{
+  background-color: black;
+  position: fixed;
+  height: 10%;
+  width: 100%;
+  top:0;
+  left: 0;
+}
+
 .card {
-  padding: 2em;
+  border-radius: 5px;
+  
+}
+
+.cardMedia{
+  width: 100%;
+  padding: 5%;
+}
+
+.cardContent{
+  border: groove 1px;
+  border-radius: 5px;
+  background: white;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 
 .read-the-docs {
   color: #888;
 }
+.nav{
+  display: flex;
+  justify-content: space-between;
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+.logo-image{
+ width: 30%;
+ line-height: 80px;
+ margin: 0 15%;
+
+}
+
+.gif{
+  width: 15%;
+}
+.pokeball-gif{
+  width: 15%;
+  
+}
+/**/
+div#imagen {
+  width: 300px;
+  height: 200px;
+  margin: 30px auto;
+}
+
+div#info {
+  position:absolute;
+  overflow:hidden;
+  width: 16%;
+  height: 200px;
+  background-color: rgba(31, 31, 31, 0.9);
+  opacity:0;
+  transition: opacity margin-bottom 0.3s;
+}
+
+p#headline {
+  position: absolute;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  transition: margin-right 0.3s;
+}
+
+div#title:hover p#headline {
+  margin-left: 115px;
+}
+
+p#descripcion {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 200px;
+  transition: margin-top 0.4s;
+}
+
+div#title:hover p#descripcion {
+  margin-top: 75px;
+}
+
+
+#title {
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  color: black;
+  margin: 0 auto;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+div#title:hover div#info {
+  opacity:1;
+}
+#title:hover {
+  box-shadow: inset 100px 0 0 0 #54b3d6;
+  color: white;
+}
+
+/*Footer*/
+
+footer{
+  background-color: black;
+  height: 60%;
+  width: 100%;
+  bottom:0;
+  left: 0;
+}
+
+.text-center{
+  text-align: center;}
